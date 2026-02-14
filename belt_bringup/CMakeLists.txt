@@ -13,6 +13,12 @@ find_package(ament_cmake REQUIRED)
 install(DIRECTORY launch 
         DESTINATION share/${PROJECT_NAME})
 
+install(DIRECTORY description 
+        DESTINATION share/${PROJECT_NAME})
+
+install(DIRECTORY rviz2
+        DESTINATION share/${PROJECT_NAME}
+        )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
