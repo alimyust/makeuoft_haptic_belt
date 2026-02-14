@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'esp_interface = belt_core.esp_interface:main',
+            'fake_pointcloud2D = belt_core.fake_pointcloud2D:main',
         ],
     },
 )
