@@ -20,7 +20,7 @@ class Nav2CostmapToMotor(Node):
 
         self.pose_subscription = self.create_subscription(
             PoseStamped,
-            'odom',
+            '/robot_pose',
             self.pose_callback,
             10
         )

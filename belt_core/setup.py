@@ -28,6 +28,8 @@ setup(
             'fake_pointcloud2D = belt_core.fake_pointcloud2D:main',
             'costmap_to_motor = belt_core.costmap_to_motor:main',
             'fake_costmap = belt_core.fake_costmap:main',
+            'EsdfSliceHaptics = belt_core.EsdfSliceHaptics:main',
+            
         ],
     },
 )
