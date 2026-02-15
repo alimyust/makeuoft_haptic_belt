@@ -33,6 +33,12 @@ def generate_launch_description():
             output="screen",
         ),
         Node(
+            package="belt_core",
+            executable="fake_costmap",
+            name="fake_costmap",
+            output="screen",
+        ),
+        Node(
             package="rviz2",
             executable="rviz2",
             name="rviz2",
