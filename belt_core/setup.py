@@ -25,11 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'esp_interface = belt_core.esp_interface:main',
-            'fake_pointcloud2D = belt_core.fake_pointcloud2D:main',
-            'costmap_to_motor = belt_core.costmap_to_motor:main',
-            'fake_costmap = belt_core.fake_costmap:main',
-            'EsdfSliceHaptics = belt_core.EsdfSliceHaptics:main',
-            
+            'cms_motor = belt_core.cms_motor:main',
         ],
     },
 )

@@ -21,16 +21,16 @@ def generate_launch_description():
     
     return LaunchDescription([
         Node(
-            package="costmap_to_motor",
-            executable="costmap_to_motor",
-            name="costmap_to_motor",
+            package="belt_core",
+            executable="cms_motor",
+            name="cms_motor",
             output="screen",
         ),
-        Node(
-            package="rviz2",
-            executable="rviz2",
-            name="rviz2",
-            output="screen",
-            arguments=["-d", rviz_config_path],
-        ),
+        # Node(
+        #     package="rviz2",
+        #     executable="rviz2",
+        #     name="rviz2",
+        #     output="screen",
+        #     arguments=["-d", rviz_config_path],
+        # ),
     ])
