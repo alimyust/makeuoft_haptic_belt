@@ -11,15 +11,15 @@ class ESP_Node(Node):
     def __init__(self, esp_port, baud_rate=115200):
         super().__init__('esp_interface_node')
         self.esp_serial = serial.Serial(esp_port, baud_rate)
-        self.esp_subscriber = self.create_subscription(
+        self.haptic_command_subscriber = self.create_subscription(
             String,
-            'esp_commands',
-            self.esp_command_callback,
+            'haptic_command',
+            self.haptic_callback,
             10
         )
 
-    def esp_command_callback(self, msg):
-        self.esp_serial.write(msg.data.encode())
+    def haptic_callback(self, msg):
+        self.esp_serial.write(f"/{msg.data}".encode())
 
 def main(args=None):
     rclpy.init(args=args)

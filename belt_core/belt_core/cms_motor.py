@@ -345,7 +345,7 @@ class NvbloxTTCHaptics(Node):
                 sm = 0.0
             self._prev_intensities[i] = sm
             out.append(int(round(255.0 * sm)))
-
+    
         msg = UInt8MultiArray()
         msg.data = out  # [L, C, R]
         self.pub.publish(msg)
