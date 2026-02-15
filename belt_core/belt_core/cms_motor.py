@@ -288,8 +288,8 @@ class NvbloxTTCHaptics(Node):
         w = int(s.width)
         h = int(s.height)
         res = float(s.resolution)
-        origin_x = float(s.origin_x)
-        origin_y = float(s.origin_y)
+        origin_x = float(s.origin.x)
+        origin_y = float(s.origin.y)
         unknown_value = float(s.unknown_value)
         data = s.data  # float32[]
 
